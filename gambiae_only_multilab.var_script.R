@@ -1,5 +1,12 @@
 #How quantified variability was determined from WHO cone bioassay data  
 
+#outputs
+#visualisation of variability
+#setting up data for binomial analysis
+#summaries of binomial (bin) glmms (extract std. dev values from random effects) for quantified variability. 
+
+
+###########################################################
 #Input your directory and dataset
 setwd("")
 Vesterg.multilab.dat <- read.csv("Anonymised_Multilab_An.gambiae_only_dataset.csv")
@@ -55,7 +62,7 @@ ggplot(Vesterg.multilab.dat, aes(x = Testing.lab_coded, y = perc_Mortality, colo
 
 ##################################################################################
 
-#calculating raw dead numbers from proportion for binomal glmms
+#calculating raw dead numbers from proportion for bin glmms
 
 #divide by 100 to get proportion not a percentage
 Vesterg.multilab.dat  $proportionalmortality <-Vesterg.multilab.dat $perc_Mortality/100
