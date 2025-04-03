@@ -1,6 +1,6 @@
 #How quantified variability was determined from WHO cone bioassay data  
 
-#Imput your directory and dataset
+#Input your directory and dataset
 setwd("")
 Vesterg.multilab.dat <- read.csv("Anonymised_Multilab_An.gambiae_only_dataset.csv")
 
