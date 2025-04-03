@@ -1,4 +1,5 @@
-#How quantified variability was determined from WHO cone bioassay data  
+#Description: How quantified variability was determined from WHO cone bioassay data  
+#Author: Gemma Francesca Harvey (gemma.harvey@lstmed.ac.uk)
 
 #outputs
 #visualisation of variability
