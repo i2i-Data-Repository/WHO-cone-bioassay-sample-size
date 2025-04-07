@@ -130,9 +130,9 @@ RefMort.Values  <- seq(0.50, 0.95, 0.025)    # a sequence of all the mortality v
 CanMort.Values  <- seq(0.55, 0.99, 0.025)    # a sequence of all the mortality values for net 1 aka candidate net
 
 
-NetVar.values   <- 0.60   # a sequence of all the variance values for between-net
-PieceVar.values  <-0.30   # a sequence of all the variance values for between-pieces
-RepVar.values   <-0.30 # a sequence of all the variance values for between-reps
+NetVar.values   <- seq(0.10, 1.60, 0.10)   # a sequence of all the variance values for between-net
+PieceVar.values  <-seq(0.10, 0.90, 0.10)   # a sequence of all the variance values for between-pieces
+RepVar.values   <-seq(0.10, 0.90, 0.10) # a sequence of all the variance values for between-reps
 
 
 MyCombos.ready <- expand.grid(Nets          =nets.seq,
@@ -180,7 +180,7 @@ total_time <- end_time - start_time
 setwd("")
 
 
-#write.csv(MyCombos.ready,'Cone_output_2013guid_multiPiece.csv')
+#write.csv(MyCombos.ready,'File_name.csv')
 
 
 stopCluster(cl = cluster)
